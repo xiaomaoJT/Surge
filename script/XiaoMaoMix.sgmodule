@@ -16,4 +16,3 @@ mix_23 = type=http-response, pattern=https:\/\/cdn-bm\.camera360\.com\/\/api\/mi
 [MITM]
 
 hostname = %APPEND% mix-api.camera360.com,cdn-bm.camera360.com
-set 限制解除 

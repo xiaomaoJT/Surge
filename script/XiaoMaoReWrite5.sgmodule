@@ -139,4 +139,3 @@ https:\/\/member\.alipan\.com\/v1\/users\/onboard_list data="https://raw.githubu
 [MITM]
 
 hostname = %APPEND% pan.baidu.com,sf3-fe-tos.pglstatp-toutiao.com,biz.caiyunapp.com,user-kaji-api.b612kaji.com,api-cs.intsig.net,account.wps.*,vip.wps.cn,www.xmind.net,www.xmind.cn,biz.cyapi.cn,cdn-w.caiyunapp.com,ad.cyapi.cn,vas.wps.cn,s4.vip.wpscdn.cn,s6.vip.wpscdn.cn,drive.wps.cn,wenk.ios.wpscdn.cn,api2.tophub.app,api.aliyundrive.com,member.aliyundrive.com,api.alipan.com,member.alipan.com,auth.alipan.com,vipapi.wps.cn,wrapper.cyapi.cn
-set 限制解除 
