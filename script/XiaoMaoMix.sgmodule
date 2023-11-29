@@ -1,0 +1,19 @@
+#!name=XiaoMaoMix
+#!desc= https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoMix.js
+
+[URL Rewrite]
+
+https:\/\/mix-api\.camera360\.com\/v1\/operational-positions - reject
+
+[Script]
+
+mix_21 = type=http-response, pattern=https:\/\/cdn-bm\.camera360\.com\/api\/mix\/recovery, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/mix.js, timeout=60, script-update-interval=0
+
+mix_22 = type=http-response, pattern=https:\/\/cdn-bm\.camera360\.com\/api\/iap\/check-receipt, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/mix.js, timeout=60, script-update-interval=0
+
+mix_23 = type=http-response, pattern=https:\/\/cdn-bm\.camera360\.com\/\/api\/mix-asset\/assets, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/mix.js, timeout=60, script-update-interval=0
+
+[MITM]
+
+hostname = %APPEND% mix-api.camera360.com,cdn-bm.camera360.com
+set 限制解除 

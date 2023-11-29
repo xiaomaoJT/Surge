@@ -1,0 +1,180 @@
+#!name= XiaoMao_rw1
+#!desc= https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/script/QX_XiaoMao_rw1.conf
+
+[URL Rewrite]
+
+# zeepLife
+https:\/\/api-mifit-cn2\.zepp\.com\/discovery\/mi\/.*_ad - reject
+#拦截vip tip
+https:\/\/pay\.kkmh\.com\/v1\/vip\/(charge_tip_list|banner_tip_list) - reject
+# 通用广告拦截
+https:\/\/(cdn-api|api)\.kkmh\.com\/v3\/ad - reject
+https:\/\/(cdn-api|api)\.kkmh\.com\/v1\/business\/mine\/business_config - reject
+# 会员优惠拦截
+https:\/\/pay\.kkmh\.com\/v1\/vip\/nameplate\/list_all - reject
+https:\/\/h5\.kuaikanmanhua\.com\/v2\/kb\/recharge_good\/list_h5 - reject
+https:\/\/h5\.kuaikanmanhua\.com\/user\/scene\/api\/new_user\/basic_info - reject
+# 拦截任务tip
+https:\/\/(cdn-api|api)\.kkmh\.com\/v2\/checkin\/task_center - reject
+# 青少年模式拦截
+https:\/\/(cdn-api|api)\.kkmh\.com\/v2\/app\/young_config\/get - reject
+# 拦截搜索词推荐
+https:\/\/search\.kkmh\.com\/search\/app\/shading_word\/v1\/list - reject
+# 拦截首页活动推送
+https:\/\/(cdn-api|api)\.kkmh\.com\/v1\/business\/activities\/get - reject
+# 拦截会员推广
+https:\/\/(cdn-api|api)\.kkmh\.com\/v1\/danmu\/bubble - reject
+# 拦截浏览历史推广
+https:\/\/api\.kkmh\.com\/v1\/business\/private_area\/remind\/get_v2 - reject
+# 倒数日 Days Matter
+https:\/\/idays-cdn\.2q10\.com\/app\/idays\/app_ad - reject
+https:\/\/app-cdn\.2q10\.com\/app\/idays\/honored - reject
+https:\/\/api5-normal-lq\.dcarapi\.com\/motor\/ad - reject
+# 拦截右下角悬浮直播标签
+https:\/\/api5-normal-lq\.dcarapi\.com\/motor\/dlive\/api\/get_feed_widget - reject
+# 萤石云视频
+http:\/\/ys-video\.aipai\.com\/* - reject
+^https?:\/\/i\.ys7\.com\/api\/ads - reject
+http:\/\/mfs\.ys7\.com\/mall\/* - reject
+#铁友火车票
+https:\/\/images3\.c-ctrip\.com\/ztrip\/.+\@[0-9]x\.png - reject
+https:\/\/images3\.c-ctrip\.com\/ztrip\/.+\.json - reject
+https:\/\/m\.ctrip\.com\/restapi\/soa2\/\d{5}\/scjson\/tripAds - reject
+# 爱思助手
+http://d\.image\.i4\.cn\/(i4_jqb|image) - reject
+https:\/\/pub-conf-m\.i4\.cn\/getversioninfo\.xhtml - reject
+https:\/\/search-app-m\.i4\.cn\/updateAppQuery\.xhtml - reject
+https:\/\/list-app-m\.i4\.cn\/getHotSearchList\.xhtml - reject
+https:\/\/list-app-m\.i4\.cn\/adclickcb\.xhtml - reject
+http:\/\/d\.image\.i4\.cn\/adInfo\/image\/original - reject
+# 闲鱼 
+^https:\/\/gw\.alicdn\.com\/mt\/ - reject
+^https:\/\/gw\.alicdn\.com\/tfs\/.+\d{3,4}-\d{4} - reject
+^https:\/\/gw\.alicdn\.com\/tps\/.+\d{3,4}-\d{4} - reject
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.taobao\.idle\.home\.welcome - reject
+# 拼多多 
+^https:\/\/api\.(pinduoduo|yangkeduo)\.com\/api\/cappuccino\/splash - reject
+# > 彩云
+^https:\/\/ad\.caiyunapp\.com\/ - reject
+# > 微信 
+^https:\/\/mp\.weixin\.qq\.com\/mp\/ad.* - reject
+# 美团 
+^https:\/\/img\.meituan\.net\/(adunion|display|midas)\/\w+\.(gif|jpg|jpg\.webp)$ - reject
+^https:\/\/(s3plus|flowplus)\.meituan\.net\/v\d\/\w+\/linglong\/\w+\.(gif|jpg|mp4) - reject
+^https:\/\/p\d\.meituan\.net\/(bizad|wmbanner)\/\w+\.jpg - reject
+^https:\/\/p\d\.meituan\.net\/movie\/\w+\.jpg\?may_covertWebp - reject
+^https:\/\/wmapi\.meituan\.com\/api\/v7\/startpicture - reject
+^https:\/\/www\.meituan\.com\/api\/v2\/appstatus\?ad - reject
+#百度
+http:\/\/rp\.hpplay\.cn\/logouts - reject
+https:\/\/pan\.baidu\.com\/pmall\/order\/privilege\/info - reject
+https:\/\/pan\.baidu\.com\/rest\/.+\/pcs\/adx - reject
+https:\/\/pan\.baidu\.com\/api\/useractivity\/activity - reject
+https?:\/\/pan\.baidu\.com\/act\/.+\/bchannel\/list - reject
+https:\/\/sofire\.baidu\.com\/ios\/.+ - reject
+https:\/\/ndstatic\.cdn\.bcebos\.com\/activity\/welfare\/js\/.+\.js - reject
+https:\/\/ndstatic\.cdn\.bcebos\.com\/activity\/welfare\/index\.html - reject
+https:\/\/pan\.baidu\.com\/pmall\/order\/privilege\/info - reject
+https:\/\/staticsns\.cdn\.bcebos\.com\/amis\/.+/banner.png - reject
+https:\/\/issuecdn\.baidupcs\.com\/issue\/netdisk\/ts_ad\/ - reject
+https:\/\/pan\.baidu\.com\/rest\/2.0\/pcs\/adv\? - reject
+https:\/\/pan\.baidu\.com\/component\/view\/(1510|1130)\?(vip|from) - reject
+^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/\w+\/\w+\/(sync|newRnSync|mlog) - reject
+^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/c\/s\/splashSchedule - reject
+^https:\/\/pn\.baidu\.com\/iad\/.+\.json - reject
+^https:\/\/feed-image\.baidu\.com\/0\/pic\/ - reject
+^http:\/\/.+\/c\/s\/(trackConfig|dashengVideo|splashSchedule) - reject
+^https:\/\/mbd\.baidu\.com\/newspage\/api\/getmobads\?page\=landingshare - reject
+# > 淘宝
+^https:\/\/heic\.alicdn\.com\/imgextra.*\.heic - reject
+
+[Script]
+
+kk_19 = type=http-response, pattern=https:\/\/pay\.kkmh\.com\/v1\/vip\/me, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/script/txt/kk.txt, timeout=60, script-update-interval=0
+
+# 拦截搜索推送
+kk_27 = type=http-response, pattern=https:\/\/search\.kkmh\.com\/v2\/search\/show, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/script/txt/kk.txt, timeout=60, script-update-interval=0
+
+# 米家
+mijia_41 = type=http-response, pattern=https:\/\/home\.mi\.com\/cgi-op\/api\/v1\/recommendation\/myTab, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/script/txt/mijia.txt, timeout=60, script-update-interval=0
+
+# 有道翻译弹窗-网页
+replaceBody_46 = type=http-response, pattern=https:\/\/api-overmind\.youdao\.com\/openapi\/get\/luna\/dict\/dict-common-config\/prod\/(translateMainPageBanner|translateMainPagePopup), requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/scripts/replace-body.js, timeout=60, argument="%5C%22value%5C%22%3A%5C%7B.%2B%3F%5C%7D->%22value%22%3A%7B%7D"
+
+dcd_49 = type=http-response, pattern=https:\/\/api5-normal-lq\.dcarapi\.com\/motor\/information\/api\/full, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/script/txt/dcd.txt, timeout=60, script-update-interval=0
+
+dcd_50 = type=http-response, pattern=https:\/\/api5-normal-lq\.dcarapi\.com\/motor\/stream_entrance\/get_feed, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/script/txt/dcd.txt, timeout=60, script-update-interval=0
+
+dcd_51 = type=http-response, pattern=https:\/\/api5-normal-lq\.dcarapi\.com\/motor\/searchpage\/launcher\/main\/v1, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/script/txt/dcd.txt, timeout=60, script-update-interval=0
+
+aisi_70 = type=http-response, pattern=https:\/\/list-app-m\.i4\.cn\/getAppList\.xhtml, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/script/txt/aisi.txt, timeout=60, script-update-interval=0
+
+replaceHeader_75 = type=http-request, pattern=^https:\/\/interface3\.music\.163\.com\/eapi\/batch\?, script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/scripts/replace-header.js, timeout=60, argument="appver%3D.%2B%3B->appver%3D2333%3B"
+
+replaceBody_95 = type=http-response, pattern=^(http|https):\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/scripts/replace-body.js, timeout=60, argument="%22advertisement_num%22%3A%5Cd%2C%22advertisement_info%22%3A%5C%5B.%2B%5C%5D%2C->%22advertisement_num%22%3A0%2C%22advertisement_info%22%3A%5B%5D%2C"
+
+UnblockURLinWeChat_97 = type=http-response, pattern=^https\:\/\/(weixin110\.qq|security.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\?, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/UnblockURLinWeChat.js, timeout=60, script-update-interval=0
+
+# 美团外卖
+myBlockAds_104 = type=http-response, pattern=^https:\/\/wmapi\.meituan\.com\/api\/v7\/loadInfo\?ad, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/myBlockAds.js, timeout=60, script-update-interval=0
+
+baidu-zhidao_127 = type=http-response, pattern=^https?:\/\/(zhidao)\.baidu\.com\/(question|index|\?fr|\?word), requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/webpage/baidu-zhidao.js, timeout=60, script-update-interval=0
+
+# 去首页广告，按需自行添加 主机名 m.baidu.com,www.baidu,com
+#baidu-index_129 = type=http-response, pattern=^https?:\/\/(www|m)\.baidu\.com(/|\/\?ref.*|\/\?from.*)$, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/webpage/baidu-index.js, timeout=60, script-update-interval=0
+# ^https?:\/\/(www|m)\.baidu\.com(/|\/\?ref.*|\/\?from.*)$ url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/webpage/baidu-index.js
+#replaceBody_130 = type=http-response, pattern= ^https?:\/\/(www|m)\.baidu\.com(\/s\?word.*|\/from.*?\/s\?word.*|\/from.*?word=.*), requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/scripts/replace-body.js, timeout=60, argument="%3Chead%3E->%3Chead%3E%3Cstyle%3E%20.ec_ad_results%7Bdisplay%3Anone!important%7D%20%3C%2Fstyle%3E"
+## 百度防跳转
+baiduNoRedirect_135 = type=http-response, pattern=^https:\/\/boxer\.baidu\.com\/scheme\?scheme, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/baidu/baiduNoRedirect.js, timeout=60, script-update-interval=0
+
+## 百度首页
+baidu-index_137 = type=http-response, pattern="^https:\/\/(www|m)\.baidu\.com(\/$|\/\?from=\w{8,9})?$", requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/webpage/baidu-index.js, timeout=60, script-update-interval=0
+
+## 百度知道
+baidu-zhidao_139 = type=http-response, pattern=^https:\/\/zhidao\.baidu\.com\/(question|index|\?fr|\?word), requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/webpage/baidu-zhidao.js, timeout=60, script-update-interval=0
+
+[Map Local]
+
+https:\/\/app-cdn\.2q10\.com\/app\/idays\/popups data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+
+# 小爱音箱
+https:\/\/api2\.mina\.mi\.com\/apphomepage\/station\/tab\/flow data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+
+https:\/\/api2\.mina\.mi\.com\/banner\/get data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+
+#懂车帝
+https:\/\/api5-normal-lq\.dcarapi\.com\/motor\/selection\/v2\/card_list data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+
+# 拦截所有直播流数据
+https:\/\/webcast5-open-lq\.douyin\.com\/webcast\/openapi data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+
+# 网易云音乐
+^https?:\/\/(ipv4|interface3?)\.music\.163.com\/eapi\/(ocpc\/)?ad\/.* data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+
+^https?:\/\/interface3\.music\.163\.com\/eapi\/comment\/(hotcomment\/collect\/fetchmodelinfov2|feed\/inserted\/resources|tips\/v2\/get)\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+
+^https?:\/\/interface3\.music\.163\.com\/eapi\/v1\/content\/exposure\/comment\/banner\/get\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+
+^https:\/\/interface3\.music\.163\.com\/eapi\/event\/floating\/layer\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+
+^https:\/\/interface3\.music\.163\.com\/eapi\/(homepage\/banner\/ad\/get|link\/scene\/show\/resource)\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+
+^https:\/\/interface3\.music\.163\.com\/eapi\/(music-vip-membership\/client\/vip\/info|vipauth\/app\/auth\/recycle)\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+
+^https:\/\/interface3\.music\.163\.com\/eapi\/(side-bar\/mini-program\/music-service\/account|delivery\/batch-deliver)\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+
+^https:\/\/interface\.music\.163\.com\/weapi\/middle\/clientcfg\/config\/list\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+
+^https:\/\/interface3?\.music\.163\.com\/w?eapi\/resource-exposure\/(activity\/config\/get|config)\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+
+# ^https?:\/\/(www|m)\.baidu\.com(\/s\?word.*|\/from.*?\/s\?word.*|\/from.*?word=.*) url response-body <head> response-body <head><style> .ec_ad_results{display:none!important} </style>
+^https:\/\/pan\.baidu\.com\/act\/api\/activityentry\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+
+^https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/pcs\/adx\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+
+^https:\/\/update\.pan\.baidu\.com\/statistics\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+
+[MITM]
+
+hostname = %APPEND% api2.mina.mi.com,wmapi.meituan.com,issuecdn.baidupcs.com,security.wechat.com,mp.weixin.qq.com,weixin110.qq.com,api.m.jd.com,interface*.music.163.com,ipv4.music.163.com,ms.jr.jd.com,draw.jdfcloud.com,jdjoy.jd.com,trade-acs.m.taobao.com,zhidao.baidu.com,boxer.baidu.com,mbd.baidu.com,feed-image.baidu.com,*.cdn.bcebos.com,rp.hpplay.cn,sofire.baidu.com,pn.baidu.com,wmapi.meituan.com,www.meituan.com,api.pinduoduo.com,api.yangkeduo.com,gw.alicdn.com,acs.m.taobao.com,home.mi.com,img.meituan.net,s3plus.meituan.net,flowplus.meituan.net,p*.meituan.net,pub-conf-m.i4.cn,search-app-m.i4.cn,list-app-m.i4.cn,images3.c-ctrip.com,m.ctrip.com,i.ys7.com,api5-normal-lq.dcarapi.com,webcast5-open-lq.douyin.com,api-overmind.youdao.com,idays-cdn.2q10.com,app-cdn.2q10.com,www.baidu.com,pay.kkmh.com,cdn-api.kkmh.com,api.kkmh.com,h5.kuaikanmanhua.com,search.kkmh.com,api-mifit-cn2.zepp.com
+set 限制解除 

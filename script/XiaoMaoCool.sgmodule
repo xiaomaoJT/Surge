@@ -1,0 +1,24 @@
+#!name=XiaoMaoCool
+#!desc= https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoCool.js
+
+[Script]
+
+cool_22 = type=http-response, pattern=https:\/\/api\.coolapk\.com\/v6\/feed\/detail, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/cool.js, timeout=60, script-update-interval=0
+
+cool_23 = type=http-response, pattern=https:\/\/api\.coolapk\.com\/v6\/account\/loadConfig, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/cool.js, timeout=60, script-update-interval=0
+
+cool_24 = type=http-response, pattern=https:\/\/api\.coolapk\.com\/v6\/user\/(profile|space), requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/cool.js, timeout=60, script-update-interval=0
+
+cool_25 = type=http-response, pattern=https:\/\/api\.coolapk\.com\/v6\/feed\/(replyList|replyDetail), requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/cool.js, timeout=60, script-update-interval=0
+
+cool_26 = type=http-response, pattern=https:\/\/api\.coolapk\.com\/v6\/main\/indexV8, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/cool.js, timeout=60, script-update-interval=0
+
+cool_27 = type=http-response, pattern=https:\/\/api\.coolapk\.com\/v6\/page\/dataList, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/cool.js, timeout=60, script-update-interval=0
+
+cool_28 = type=http-response, pattern=https:\/\/api\.coolapk\.com\/v6\/main\/init, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/cool.js, timeout=60, script-update-interval=0
+
+cool_29 = type=http-response, pattern=https:\/\/api\.coolapk\.com\/v6\/topic\/newTagDetail, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/cool.js, timeout=60, script-update-interval=0
+
+[MITM]
+
+hostname = %APPEND% api.coolapk.com

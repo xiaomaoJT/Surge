@@ -1,0 +1,142 @@
+#!name= XiaoMao_rw5
+#!desc= https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/script/QX_XiaoMao_rw5.conf
+
+[URL Rewrite]
+
+https:\/\/cdn-w\.caiyunapp\.com\/p\/app\/activity - reject
+https:\/\/ad\.cyapi\.cn\/* - reject
+
+[Script]
+
+bdc_13 = type=http-response, pattern=https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/bdc.js, timeout=60, script-update-interval=0
+
+bdc_14 = type=http-response, pattern=https:\/\/pan\.baidu\.com\/act\/v2\/membergrow\/my, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/bdc.js, timeout=60, script-update-interval=0
+
+bdc_15 = type=http-response, pattern=https:\/\/pan\.baidu\.com\/story\/diff, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/bdc.js, timeout=60, script-update-interval=0
+
+bdc_16 = type=http-response, pattern=https:\/\/pan\.baidu\.com\/dosp\/opconf\/list, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/bdc.js, timeout=60, script-update-interval=0
+
+bdc_17 = type=http-response, pattern=https:\/\/pan\.baidu\.com\/api\/user\/getinfo, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/bdc.js, timeout=60, script-update-interval=0
+
+bdc_18 = type=http-response, pattern=https:\/\/pan\.baidu\.com\/act\/api\/activityentry, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/bdc.js, timeout=60, script-update-interval=0
+
+bdc_19 = type=http-response, pattern=https:\/\/pan\.baidu\.com\/api\/singkil\/bindquery, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/bdc.js, timeout=60, script-update-interval=0
+
+cyw_b_33 = type=http-response, pattern=https?:\/\/biz\.(caiyunapp|cyapi)\.(com|cn)\/(membership_rights|v2\/user), requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/cyw_b.js, timeout=60, script-update-interval=0
+
+cyw_h_37 = type=http-request, pattern=https:\/\/wrapper\.cyapi\.cn\/v1, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/cyw_h.js, timeout=60, script-update-interval=0
+
+kj_38 = type=http-response, pattern=https:\/\/user-kaji-api\.b612kaji\.com\/v1\/purchase\/subscription\/subscriber\/status, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/kj.js, timeout=60, script-update-interval=0
+
+sa_39 = type=http-response, pattern=https:\/\/api-cs\.intsig\.net\/purchase\/cs\/query_property, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/sa.js, timeout=60, script-update-interval=0
+
+wps_40 = type=http-response, pattern=https:\/\/account\.wps\.(com|cn)\/api\/users\/(.+)\/overview, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/wps.js, timeout=60, script-update-interval=0
+
+wps_41 = type=http-response, pattern=https:\/\/vip\.wps\.cn\/userinfo, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/wps.js, timeout=60, script-update-interval=0
+
+wps_42 = type=http-response, pattern=https:\/\/account\.wps\.cn\/api\/v3\/mine\/vips, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/wps.js, timeout=60, script-update-interval=0
+
+wps_43 = type=http-response, pattern=https:\/\/vas\.wps\.cn\/query\/api\/v1\/list_purchase_info, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/wps.js, timeout=60, script-update-interval=0
+
+wps_44 = type=http-response, pattern=https:\/\/s4\.vip\.wpscdn\.cn\/vipapi\/banner\/v1\/config, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/wps.js, timeout=60, script-update-interval=0
+
+wps_45 = type=http-response, pattern=https:\/\/s6\.vip\.wpscdn\.cn\/vipapi\/banner\/v1\/config, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/wps.js, timeout=60, script-update-interval=0
+
+wps_46 = type=http-response, pattern=https:\/\/drive\.wps\.cn\/api\/v3\/spaces, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/wps.js, timeout=60, script-update-interval=0
+
+wps_47 = type=http-response, pattern=https:\/\/wenk\.ios\.wpscdn\.cn\/config\/purchase_config.json, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/wps.js, timeout=60, script-update-interval=0
+
+wps_48 = type=http-response, pattern=https:\/\/vipapi\.wps\.cn\/payment_config\/v1\/client\/conf, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/wps.js, timeout=60, script-update-interval=0
+
+xm_49 = type=http-response, pattern=https:\/\/www\.xmind(\.net|\.cn)\/\_res\/devices, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/xm.js, timeout=60, script-update-interval=0
+
+xm_50 = type=http-response, pattern=https:\/\/www\.xmind(\.net|\.cn)\/\_res\/profile\/.+\/, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/xm.js, timeout=60, script-update-interval=0
+
+xm_51 = type=http-response, pattern=https:\/\/www\.xmind(\.net|\.cn)\/\_res\/token\/.+, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/xm.js, timeout=60, script-update-interval=0
+
+th_52 = type=http-response, pattern=https:\/\/api2\.tophub\.app\/account\/sync, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/th.js, timeout=60, script-update-interval=0
+
+th_53 = type=http-response, pattern=https:\/\/api2\.tophub\.app\/my\/items, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/th.js, timeout=60, script-update-interval=0
+
+th_54 = type=http-response, pattern=https:\/\/api2\.tophub\.app\/my\/alerts\/items, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/th.js, timeout=60, script-update-interval=0
+
+th_55 = type=http-response, pattern=https:\/\/api2\.tophub\.app\/my\/channels\/.+\/items, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/th.js, timeout=60, script-update-interval=0
+
+alic_57 = type=http-response, pattern=https:\/\/api\.(aliyundrive|alipan)\.com\/apps\/v1\/users\/apps\/welcome, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/alic.js, timeout=60, script-update-interval=0
+
+alic_58 = type=http-response, pattern=https:\/\/api\.(aliyundrive|alipan)\.com\/v2\/databox\/get_personal_info, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/alic.js, timeout=60, script-update-interval=0
+
+alic_59 = type=http-response, pattern=https:\/\/api\.(aliyundrive|alipan)\.com\/business\/v1.0\/users\/vip\/info, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/alic.js, timeout=60, script-update-interval=0
+
+alic_60 = type=http-response, pattern=https:\/\/member\.(aliyundrive|alipan)\.com\/v1\/users\/tools, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/alic.js, timeout=60, script-update-interval=0
+
+alic_61 = type=http-response, pattern=https:\/\/api\.(aliyundrive|alipan)\.com\/business\/v1\/users\/me\/vip\/info, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/alic.js, timeout=60, script-update-interval=0
+
+alic_62 = type=http-response, pattern=https:\/\/api\.(aliyundrive|alipan)\.com\/business\/v1.1\/users\/me\/vip\/info, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/alic.js, timeout=60, script-update-interval=0
+
+alic_63 = type=http-response, pattern=https:\/\/api\.(aliyundrive|alipan)\.com\/apps\/v1\/users\/home\/widgets, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/alic.js, timeout=60, script-update-interval=0
+
+alic_66 = type=http-response, pattern=https:\/\/api\.(aliyundrive|alipan)\.com\/adrive\/v1\/app\/logos, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/alic.js, timeout=60, script-update-interval=0
+
+alic_67 = type=http-response, pattern=https:\/\/api\.(aliyundrive|alipan)\.com\/adrive\/v2\/user\/get, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/alic.js, timeout=60, script-update-interval=0
+
+alic_68 = type=http-response, pattern=https:\/\/api\.(aliyundrive|alipan)\.com\/business\/v1.0\/users\/feature\/list, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/alic.js, timeout=60, script-update-interval=0
+
+alic_69 = type=http-response, pattern=https:\/\/api\.(aliyundrive|alipan)\.com\/business\/v1.0\/users\/feature\/trial, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/alic.js, timeout=60, script-update-interval=0
+
+alic_70 = type=http-response, pattern=https:\/\/api\.(aliyundrive|alipan)\.com\/v2\/file\/get_video_preview_play_info, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/alic.js, timeout=60, script-update-interval=0
+
+alic_71 = type=http-response, pattern=https:\/\/api\.(aliyundrive|alipan)\.com\/adrive\/v2\/batch, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/alic.js, timeout=60, script-update-interval=0
+
+alic_72 = type=http-response, pattern=https:\/\/member\.alipan\.com\/v2\/activity\/sign_in_info, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/alic.js, timeout=60, script-update-interval=0
+
+alic_73 = type=http-response, pattern=https:\/\/member\.aliyundrive\.com\/v2\/activity\/sign_in_list, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/alic.js, timeout=60, script-update-interval=0
+
+alic_76 = type=http-response, pattern=https:\/\/member\.alipan\.com\/v1\/users\/me, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/alic.js, timeout=60, script-update-interval=0
+
+alic_77 = type=http-response, pattern=https:\/\/api\.alipan\.com\/adrive\/v1\/timeline\/user\/get, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/alic.js, timeout=60, script-update-interval=0
+
+[Map Local]
+
+https:\/\/staticsns\.cdn\.bcebos\.com\/amis\/.+\.(jpg|png|jpeg|gif)$ data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+
+https:\/\/pan\.baidu\.com\/imbox\/msg\/pull data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+
+https:\/\/pan\.baidu\.com\/api\/version\/getlatestversion data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+
+https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/product data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+
+https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/level data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+
+https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/activity data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+
+https:\/\/pan\.baidu\.com\/act\/api\/conf data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+
+https:\/\/pan\.baidu\.com\/act\/v2\/welfare\/list data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+
+https:\/\/pan\.baidu\.com\/api\/getconfig data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+
+https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/proxy\/guide data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+
+https:\/\/pan\.baidu\.com\/api\/taskscore\/tasklist data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+
+https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/xpan\/smartprogram data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+
+https:\/\/sf3-fe-tos\.pglstatp-toutiao\.com\/obj\/ad-pattern\/renderer data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+
+https:\/\/biz\.cyapi\.cn\/p\/v1\/entries data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+
+https:\/\/api2\.tophub\.app\/remai\/recommend\/taobao data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+
+https:\/\/api\.(aliyundrive|alipan)\.com\/apps\/v2\/users\/home\/widgets data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+
+https://api.aliyundrive.com/apps/v1/users/home/news data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+
+https:\/\/api\.alipan\.com\/business\/v1.0\/users\/coupon\/detail data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+
+https:\/\/member\.alipan\.com\/v1\/users\/onboard_list data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+
+[MITM]
+
+hostname = %APPEND% pan.baidu.com,sf3-fe-tos.pglstatp-toutiao.com,biz.caiyunapp.com,user-kaji-api.b612kaji.com,api-cs.intsig.net,account.wps.*,vip.wps.cn,www.xmind.net,www.xmind.cn,biz.cyapi.cn,cdn-w.caiyunapp.com,ad.cyapi.cn,vas.wps.cn,s4.vip.wpscdn.cn,s6.vip.wpscdn.cn,drive.wps.cn,wenk.ios.wpscdn.cn,api2.tophub.app,api.aliyundrive.com,member.aliyundrive.com,api.alipan.com,member.alipan.com,auth.alipan.com,vipapi.wps.cn,wrapper.cyapi.cn
+set 限制解除 
